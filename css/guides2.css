@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, YakuHanJPs,"Hiragino Sans","Hitagino KaKu Gothic ProN",Meirio,sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  color:#000;
+  margin: 0;
+  background-color:#1f1f1f;
+}
+
+/* ーーーーーpage-menuーーーーーー */
+
+.page-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  list-style: none;
+  background-color: #000;
+  height: 60px;
+}
+
+.page-menu li{
+  color: #fff;
+  margin: 10px 20px;
+}
+
+.page-menu a:hover{
+  color: #808080;
+}
+
+/* ーーーーーTOPーーーーー */
+
+.top-bg{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+
+.top{
+  background-color: pink;
+}
+
+.center-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-logo{
+  width: 358px;
+  height: 158px;
+  margin-bottom: 19px;
+}
+
+.top-text{
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  padding-top: 19px;
+  border-top: 1px #fff solid;
+}
+
+/* ーーーーーclassーーーーー */
+
+.center{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.position{
+  width: 1060px;
+}
+
+.item img{
+  width: 265px;
+  height: 265px;
+}
+
+.copy-logo2 img{
+  width: 275px;
+  height: 35px;
+}
+
+/* ーーーーーresponsiveーーーーー */
+
+@media(max-width:750px){
+
+  .top-logo{
+    display: none;
+  }
+
+  .top-text{
+    font-size: 20px;
+    border-top: none;
+  }  
+
+  .top-bg{
+    background-size: cover;
+    height: 132px;
+  }
+
+  .top-text{
+    font-size: 10px;
+  }
+
+  .page-menu{
+    display: none;
+  }
+
+  .bg-main{
+    width: 100%;
+  }
+
+  .center{
+    margin: 0;
+  }
+
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  .position{
+    width: 100%;
+  }
+  
+  .item img{
+    width: 100%;
+    height: auto;
+  }
+
+}

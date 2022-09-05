@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, YakuHanJPs,"Hiragino Sans","Hitagino KaKu Gothic ProN",Meirio,sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  color:#fff;
+  margin: 0;
+  background-color:#1f1f1f;
+}
+
+/* ーーーーーpage-menuーーーーーー */
+
+.page-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  list-style: none;
+  background-color: #000;
+  height: 60px;
+}
+
+.page-menu li{
+  color: #fff;
+  margin: 10px 20px;
+}
+
+.page-menu a:hover{
+  color: #808080;
+}
+
+.artists-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  list-style: none;
+  background-color: #000;
+  height: 60px;
+}
+
+.artists-menu li{
+  color: #fff;
+  margin: 10px 20px;
+  padding-bottom: 10px;
+}
+
+.artists-menu a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.artists-menu a:hover{
+  color: #236DC8;
+  border-bottom: 4px #236DC8 solid;
+}
+
+/* ーーーーーTOPーーーーー */
+
+.top-bg{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+
+.top{
+  background-color: pink;
+}
+
+.center-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-logo{
+  width: 358px;
+  height: 158px;
+  margin-bottom: 19px;
+}
+
+.top-text{
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  padding-top: 19px;
+  border-top: 1px #fff solid;
+}
+
+/* ーーーーーmarginーーーーー */
+
+.margin-bottom20{
+  margin-bottom: 20px;
+}
+
+/* ーーーーータグーーーーー */
+
+h2{
+  font-size: 30px;
+  padding: 32px 0;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* ーーーーークラスーーーーー */
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.text-j-fes-title{
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 35px;
+  margin-bottom: 13px;
+  text-align: center;
+}
+
+.text-artists-top{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.button-j-fes{
+  background-color: #e5273e;
+  text-align: center;
+  line-height: 44px;
+  width: 340px;
+  border-radius: 4px;
+}
+
+.button-j-fes a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.main{
+  width: 1080px;
+}
+
+.schedule-nav{
+  display: flex;
+  text-align: center;
+}
+
+.schedule-nav li{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 242px;
+  background-color: rgba(64, 64, 64, 0.95);
+  padding: 6px 0 7px 0;
+}
+
+.day{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.week{
+  font-size: 12px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 10px;
+}
+
+.artists p{
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 9px 0 18px;
+}
+
+.artists img{
+  width: 339px;
+  height: auto;
+}
+
+.artists-attention{
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.padding-top24{
+  padding-top: 24px;
+}
+
+.padding-bottom24{
+  padding-bottom: 24px;
+}
+
+
+.copy-logo2 img{
+  width: 275px;
+  height: 35px;
+}
+
+/* ーーーーーresponsiveーーーーー */
+
+@media(max-width:750px){
+
+  .sp-header{
+    background-color: #000;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+  }
+
+  .sp-header img{
+    width: 150px;
+    height: auto;
+    text-align: center;
+  }
+
+  .hamburger-menu input{
+    display: none;
+  }
+
+  .menu-btn{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 54px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #000;
+  }
+
+  .menu-btn span,
+  .menu-btn span::before,
+  .menu-btn span::after
+   {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 24px;
+    background-color: #fff;
+    position: absolute;
+    transition: 0.2s;
+  }
+
+  .menu-btn span::before{
+    bottom: 8px;
+    transition: 0.2s;
+  }
+
+  .menu-btn span::after{
+    top: 8px;
+    transition: 0.2s;
+  }
+
+  #menu-btn-check:checked ~ .menu-btn span{
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.2s;
+  }
+
+  #menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+    transition: 0.2s;
+  }
+  
+  #menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: 0.2s;
+  }
+
+  .menu-content{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    z-index: 80;
+    background-color: #000; 
+    padding: 0 20px ;
+    margin-top: 54px;
+    overflow: scroll;
+    transition: all 0.3s;
+  }
+
+  #menu-btn-check:checked ~ .menu-content{
+    right: 50%;
+  }
+
+  .menu-content h1{
+    color: #fff;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 44px;
+    padding-top: 15px;
+  }
+
+  .menu-content li{
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 44px;
+    cursor: pointer;
+    border-bottom: 1px solid #404040;
+  }
+
+  .hamburger-sns{
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 88px;
+  }
+
+  .hamburger-sns img{
+    height: 43px;
+    width: auto;
+    padding: 0 12px;
+  }
+
+  .text-404040{
+    color: #404040;
+  }
+
+  .text-fff{
+    color: #fff;
+  }
+
+  .top-bg{
+    background-size: cover;
+    height: 78px;
+    margin-top: 54px;
+  }
+
+  .top-logo{
+    display: none;
+  }
+
+  .top-text{
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+    padding-top: 0;
+    border-top: none;
+  }  
+
+  .main{
+    width: 100%;
+  }
+  
+  .schedule-nav{
+    height: 54px;
+    width: 100%;
+  }
+  
+  .schedule-nav li{
+    font-size: 20px;
+    list-style-type: none;
+    width: 100%;
+    height: 54px;
+    padding: 10px 0;
+    background-color: rgba(64, 64, 64, 0.95);
+  }
+
+  .artists-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    list-style: none;
+    background-color: #404040;
+    height: 32px;
+    margin: 16px;
+    border-radius: 5px;
+  }
+
+  .artists-menu li{
+    text-align: center;
+    width: 50%;
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  .text-j-fes-title{
+    font-size: 18px;
+  }
+
+  .text-artists-top{
+    font-size: 13px;
+  }
+
+  .artists{
+    width: 50vw;
+  }
+
+  .artists img{
+    width: 100%;
+  }
+
+  .artists p{
+    font-size: 12px;
+    font-weight: normal;
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
+    padding: 0 0;
+  }
+
+  .artists-attention{
+    font-size: 10px;
+    margin-left: 30px;
+  }
+
+}
+
+@media(min-width:750px){
+
+  .sp-header{
+    display: none;
+  }
+
+}

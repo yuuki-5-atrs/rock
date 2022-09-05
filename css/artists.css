@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, YakuHanJPs,"Hiragino Sans","Hitagino KaKu Gothic ProN",Meirio,sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  background-color:#2d2d2d;
+}
+
+/* ーーーーーpage-menuーーーーーー */
+
+.page-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  list-style: none;
+  background-color: #000;
+  height: 60px;
+}
+
+.page-menu li{
+  color: #fff;
+  margin: 10px 20px;
+}
+
+.page-menu a:hover{
+  color: #808080;
+}
+
+/* ーーーーーTOPーーーーー */
+
+.top-bg{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+
+.top{
+  background-image: url(../img/timetable/mainvisual_lineup_pc.jpg);
+}
+
+.center-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-logo{
+  width: 358px;
+  height: 158px;
+  margin-bottom: 19px;
+}
+
+.top-text{
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  padding-top: 19px;
+  border-top: 1px #fff solid;
+}

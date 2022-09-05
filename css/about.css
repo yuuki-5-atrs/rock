@@ -1,0 +1,531 @@
+@charset "UTF-8";
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, YakuHanJPs,"Hiragino Sans","Hitagino KaKu Gothic ProN",Meirio,sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  color:#000;
+  margin: 0;
+  background-color:#1f1f1f;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* ーーーーーpage-menuーーーーーー */
+
+.page-menu{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  list-style: none;
+  background-color: #000;
+}
+
+.page-menu-li{
+  color: #fff;
+  font-weight: bold;
+}
+
+.page-menu-li-none{
+  padding: 17px 10px;
+  margin: 0 10px;
+  color: #808080;
+}
+
+.page-menu-on{
+  color: #236DC8;
+  border-bottom: 4px solid #236DC8;
+  padding: 17px 10px;
+  margin: 0 10px;
+}
+
+.page-menu-li a{
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 17px 10px;
+  margin: 0 10px;
+}
+
+.page-menu-li a:hover{
+  color: #236DC8;
+  border-bottom: 4px solid #236DC8;
+}
+
+/* ーーーーーTOPーーーーー */
+
+.top-bg{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+
+.top{
+  background-color:pink;
+}
+
+.center-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-logo{
+  width: 358px;
+  height: 158px;
+  margin-bottom: 19px;
+}
+
+.top-text{
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  padding-top: 19px;
+  border-top: 1px #fff solid;
+}
+
+/* ーーーーータグーーーーー */
+
+h2{
+  font-size: 25px;
+  padding: 18px 0 ;
+  border-bottom: 1px solid #262626;
+  margin-bottom: 24px;
+}
+
+main{
+  width: 60%;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+#side-menu{
+  width: 22%;
+  margin-right: 50px;
+}
+
+#side-menu a{
+  color: #000;
+  text-decoration: none;
+}
+
+/* ーーーーーclassーーーーー */
+
+.small-ul li{
+  color: #555;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.small-ul a{
+  color: #e5273e;
+  font-size: 12px;
+}
+
+.top-gaiyou{
+  margin: 25px 0;
+}
+
+.gaiyou-heading{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.small-heading{
+  font-size: 15px;
+  margin: 28px 0;
+  color: #444;
+}
+
+.form-url{
+  color: #ff0000;
+  font-size: 15px;
+}
+
+.side-top-content{
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 84px;
+  padding-top: 25px;
+  border-top: 1px solid #262626;
+}
+
+.side-content{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* ーーーーーテキストの大きさーーーーー */
+
+.text12{
+  font-size: 12px;
+}
+
+/* ーーーーーmarginーーーーー */
+
+.margin-top-12{
+  margin-top: 12px;
+}
+
+.margin-bottom25{
+  margin-bottom: 25px;
+}
+
+.margin-bottom65{
+  margin-bottom: 65px;
+}
+
+/* ーーーーー位置ーーーーー */
+
+.layout{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ーーーーー背景の大きさーーーーー */
+
+.bg-main{
+  background-color: #fff;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.copy-logo2 img{
+  width: 275px;
+  height: 35px;
+}
+
+
+/* ーーーーーresponsiveーーーーー */
+
+@media(max-width:750px){
+
+  .top-logo{
+    display: none;
+  }
+
+  .sp-header{
+    background-color: #000;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+  }
+
+  .sp-header img{
+    width: 150px;
+    height: auto;
+    text-align: center;
+  }
+
+  .hamburger-menu input{
+    display: none;
+  }
+
+  .menu-btn{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 54px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #000;
+  }
+
+  .menu-btn span,
+  .menu-btn span::before,
+  .menu-btn span::after
+   {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 24px;
+    background-color: #fff;
+    position: absolute;
+    transition: 0.2s;
+  }
+
+  .menu-btn span::before{
+    bottom: 8px;
+    transition: 0.2s;
+  }
+
+  .menu-btn span::after{
+    top: 8px;
+    transition: 0.2s;
+  }
+
+  #menu-btn-check:checked ~ .menu-btn span{
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.2s;
+  }
+
+  #menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+    transition: 0.2s;
+  }
+  
+  #menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: 0.2s;
+  }
+
+  .menu-content{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    z-index: 80;
+    background-color: #000; 
+    padding: 0 20px ;
+    margin-top: 54px;
+    overflow: scroll;
+    transition: all 0.3s;
+  }
+
+  #menu-btn-check:checked ~ .menu-content{
+    right: 50%;
+  }
+
+  .menu-content h1{
+    color: #fff;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 44px;
+    padding-top: 15px;
+  }
+
+  .menu-content li{
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 44px;
+    cursor: pointer;
+    border-bottom: 1px solid #404040;
+  }
+
+  .hamburger-sns{
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 88px;
+  }
+
+  .hamburger-sns img{
+    height: 43px;
+    width: auto;
+    padding: 0 12px;
+  }
+
+  .text-404040{
+    color: #404040;
+  }
+
+  .text-fff{
+    color: #fff;
+  }
+  
+  .sp-title{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .top-text{
+    border-top: none;
+    font-size: 10px;
+    padding-top: 3px;
+  }  
+
+  .top-bg{
+    background-size: cover;
+    height: 78px;
+    margin-top: 54px;
+  }
+
+  .page-menu{
+    display: none;
+  }
+
+  .accordion{
+    width: 100%;
+  }
+
+  #accordion-item{
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.2s;
+  }
+
+  .accordion input{
+    display: none;
+  }
+
+  .accordion label{
+    display: block;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+  }
+
+  .accordion ul{
+    list-style: none;
+    transition: 0.2s;
+  }
+
+  .accordion li{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #404040;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .accordion a{
+    display: block;
+    text-decoration: none;
+    color: #fff
+  }
+
+  #menu-bar:checked ~ #accordion-item li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 50%;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #404040;
+    text-decoration: none;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s;
+  }
+
+  .accordion label:after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-bottom:3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 16px;
+    top: 150px;
+    transition: 0.2s;
+  }
+
+  .accordion input[type=checkbox]:checked + label:after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-bottom:3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(-135deg);
+    position: absolute;
+    right: 16px;
+    top: 153px;
+    transition: 0.2s;
+  }
+
+  .sp-menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sp-menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #404040;
+    color: #fff;
+  }
+
+  .sp-menu a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .sp-menu-li-on{
+    background-color: #236DC8;
+    width: 100%;
+    text-align: center;
+  }
+
+  .bg-main{
+    width: 100%;
+  }
+  
+  .layout{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main{
+    width: 100%;
+    margin-left: 0px;
+    padding: 0 20px 20px 20px;
+  }
+  
+  #side-menu{
+    display: none;
+  }
+
+}
+
+@media(min-width:750px){
+
+  .sp-header{
+    display: none;
+  }
+
+  .sp-title{
+    display: none;
+  }
+
+  .sp-menu-title{
+    display: none;
+  }
+
+  .sp-menu{
+    display: none;
+  }
+
+  .accordion{
+    display: none;
+  }
+
+}

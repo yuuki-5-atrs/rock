@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, YakuHanJPs,"Hiragino Sans","Hitagino KaKu Gothic ProN",Meirio,sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  color:#fff;
+  margin: 0;
+  background-color:#1f1f1f;
+}
+
+/* ーーーーーpage-menuーーーーーー */
+
+.page-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  list-style: none;
+  background-color: #000;
+  height: 60px;
+}
+
+.page-menu li{
+  color: #fff;
+  margin: 10px 20px;
+}
+
+.page-menu a:hover{
+  color: #808080;
+}
+
+.artists-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  list-style: none;
+  background-color: #000;
+  height: 60px;
+}
+
+.artists-menu li{
+  color: #fff;
+  margin: 10px 20px;
+  padding-bottom: 10px;
+}
+
+.artists-menu a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.artists-menu a:hover{
+  color: #236DC8;
+  border-bottom: 4px #236DC8 solid;
+}
+
+/* ーーーーーTOPーーーーー */
+
+.top-bg{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+
+.top{
+  background-color: pink;
+}
+
+.center-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-logo{
+  width: 358px;
+  height: 158px;
+  margin-bottom: 19px;
+}
+
+.top-text{
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  padding-top: 19px;
+  border-top: 1px #fff solid;
+}
+
+.copy-logo2 img{
+  width: 275px;
+  height: 35px;
+}
+
+/* ーーーーーresponsiveーーーーー */
+
+@media(max-width:750px){
+
+  .top-logo{
+    display: none;
+  }
+
+  .top-text{
+    font-size: 20px;
+    border-top: none;
+  }  
+
+  .top-bg{
+    background-size: cover;
+    height: 78px;
+  }
+
+  .top-text{
+    font-size: 10px;
+  }
+
+  .page-menu{
+    display: none;
+  }
+
+  .bg-main{
+    width: 100%;
+  }
+
+}
